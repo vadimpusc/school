@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+font-family: Arial, sans-serif;
 margin: 0;
 color: white;
 background-color: black;
@@ -47,7 +47,7 @@ background-image: url("img/home.jpg");
 background-size: cover;
 background-position: center;
 height: 100vh;
-display: flex;
+display: row;
 align-items: center;
 justify-content: center;
 text-align: center;
@@ -60,12 +60,6 @@ text-shadow: 2px 2px #000;
 
 #about {
 padding: 20px;
-}
-
-#photo-gallery img {
-width: 100%;
-height: auto;
-margin-bottom: 20px;
 }
 
 #classes table {
