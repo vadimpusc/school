@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+margin: 0;
+color: white;
+background-color: black;
+}
+
+header {
+position: relative;
+}  
+
+nav {
+display: flex;
+justify-content: space-between;
+padding: 10px;
+background-color: black;
+}
+
+nav a {
+color: white;
+font-size: 22px;
+text-decoration: none;
+margin-right: 10px;
+padding: 10px;
+text-transform: uppercase;
+}
+
+nav a.active {
+/* color: orange; */
+text-decoration: none;
+}
+
+nav a.icon {
+display: none;
+}
+
+.page {
+display: none;
+}
+
+.page.active {
+display: block;
+}
+
+#home {
+background-image: url("img/home.jpg");
+background-size: cover;
+background-position: center;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+#home h1 {
+font-size: 5em;
+text-shadow: 2px 2px #000;
+}
+
+#about {
+padding: 20px;
+}
+
+#photo-gallery img {
+width: 100%;
+height: auto;
+margin-bottom: 20px;
+}
+
+#classes table {
+width: 100%;
+border-collapse: collapse;
+}
+
+#classes th, #classes td {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+#classes th {
+background-color: white;
+color: black;
+}
+
+#contact {
+padding: 20px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+nav a.icon {
+display: block;
+float: right;
+}
+nav {
+position: relative;
+}
+nav.responsive {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+}
+nav.responsive a {
+display: block;
+text-align: center;
+}
+.page {
+position: relative;
+z-index: 0;
+}
+#home h1 {
+font-size: 3em;
+}
+#classes table, #photo-gallery {
+width: 100%;
+}
+}
+
+p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: normal;
+}
+
+.collapsible-label {
+    display: block;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .collapsible-checkbox {
+    display: none;
+  }
+  
+  .collapsible-checkbox:checked ~ .collapsible-content {
+    display: block;
+  }
+  
+  .collapsible-content {
+    display: none;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+      
