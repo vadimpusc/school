@@ -194,3 +194,12 @@ body {
       padding: 10px;
     }
   }
+
+  .highlighted-text {
+    color: orange;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
