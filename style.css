@@ -78,6 +78,7 @@ body {
   
   .container .content .author {
     font-style: italic;
+    font-size: 12px;
   }
   
   .container .content .cta-link {
