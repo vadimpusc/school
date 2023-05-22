@@ -204,3 +204,7 @@ body {
   a {
     text-decoration: none;
   }
+
+  .intense-label {
+    color: orange;
+  }
