@@ -208,3 +208,11 @@ body {
   .intense-label {
     color: orange;
   }
+
+  .open-label {
+    color: greenyellow;
+  }
+
+  .open-soon {
+    color: orange;
+  }
