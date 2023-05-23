@@ -216,3 +216,22 @@ body {
   .open-soon {
     color: orange;
   }
+
+  .button {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .button img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:hover img {
+    opacity: 0.8;
+  }
+  
