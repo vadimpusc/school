@@ -1,6 +1,8 @@
 /* Common styles for all pages */
 body {
-    margin: 0;
+    /* margin: 100px; */
+    margin-left: 100px;
+    margin-right: 100px;
     font-family: Arial, sans-serif;
     background-color: black;
   }
@@ -19,7 +21,7 @@ body {
     color: white;
     text-decoration: none;
     padding: 10px;
-    font-size: 20px;
+    font-size: 24px;
   }
   
   nav a.active {
@@ -28,8 +30,12 @@ body {
   }
   
   .container {
-    position: relative;
-    max-width: 100%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 1000px; */
     color: white;
   }
   
@@ -41,7 +47,7 @@ body {
   
   /* Styles for specific pages */
   .container .content h1 {
-    font-size: 48px;
+    font-size: 68px;
     color: white;
     margin-top: 100px;
   }
@@ -54,15 +60,30 @@ body {
 
   p {
     color: white;
+    font-size: 24px;
   }
+
+h1 {
+  color: white;
+  font-size: 300px;
+}
+
+  table {
+    font-size: 24px;
+  }
+
+label {
+  font-size: 24px;
+  color: orange
+}
 
   h2 {
     color: white;
   }
   
   .container .content p {
-    font-size: 18px;
-    color: white;
+    /* font-size: 18px; */
+    /* color: white; */
     margin-bottom: 20px;
   }
   
@@ -73,7 +94,7 @@ body {
   }
 
   .desc-img {
-    width: 300px;
+    width: 500px;
   }
   
   .container .content .author {
@@ -89,6 +110,7 @@ body {
     text-decoration: none;
     margin-top: 20px;
     border-radius: 5px;
+    font-size: 24px;
   }
   
   .container .content .cta-link:hover {
@@ -235,3 +257,10 @@ body {
     opacity: 0.8;
   }
   
+.sorry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
