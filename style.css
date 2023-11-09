@@ -2,6 +2,7 @@
 
 * {
   font-family: monospace;
+  font-weight: 100;
 }
 
 body {
@@ -139,11 +140,11 @@ label {
     display: inline-block;
     padding: 10px 20px;
     background-color: orange;
-    color: black;
+    color: white;
     text-decoration: none;
     margin-top: 20px;
     border-radius: 5px;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .devider-30 {
@@ -346,10 +347,10 @@ section {
   /* height: 60px; */
   font-size: 20px;
   background-color: orange;
-  /* color: white; */
+  color: white;
   border: 0px;
   border-radius: 5px;
-  margin: 10px;
+  /* margin: 20px; */
   padding: 10px;
 }
 
