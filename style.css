@@ -1,4 +1,9 @@
 /* Common styles for all pages */
+
+* {
+  font-family: monospace;
+}
+
 body {
     /* margin: 100px; */
     margin-left: 10px;
@@ -54,13 +59,16 @@ body {
     align-items: center;
     /* width: 1000px; */
     color: white;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   
   .content {
     background-color: black;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     width: 100%;
+
 
   }
   
@@ -114,9 +122,8 @@ label {
   }
   
   .container .content img {
-    width: 50%;
-    /* border-radius: 50%; */
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .desc-img {
@@ -137,6 +144,10 @@ label {
     margin-top: 20px;
     border-radius: 5px;
     font-size: 24px;
+  }
+
+  .devider-30 {
+    padding-bottom: 30px;
   }
   
   .container .content .cta-link:hover {
@@ -212,6 +223,8 @@ label {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    font-size: 20px;
+    color: lightgreen;
   }
   
   .collapsible-checkbox {
@@ -242,6 +255,14 @@ label {
     .about-course-container {
       padding: 10px;
     }
+  }
+
+  .image-about {
+    border-radius: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    max-width: 500px;
+
   }
 
   .highlighted-text {
@@ -298,7 +319,8 @@ section {
   justify-content: center;
   text-align: center;
   height: 100vh;
-  /* width: 60%; */
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .in-row {
@@ -316,10 +338,15 @@ section {
   }
 }
 
+.sub-text-small {
+  font-size: 16px;
+}
+
 .book-button {
   /* height: 60px; */
-  font-size: 30px;
-  background-color: white;
+  font-size: 20px;
+  background-color: orange;
+  /* color: white; */
   border: 0px;
   border-radius: 5px;
   margin: 10px;
@@ -327,5 +354,6 @@ section {
 }
 
 .book-button:hover {
-  background-color: orange;
+  background-color: white;
+  color: black;
 }
