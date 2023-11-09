@@ -84,9 +84,17 @@ body {
     font-size: 40px;
     color: white;
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
   
+.classes-name {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
   .container .content h2 {
     font-size: 26px;
     color: white;
@@ -388,6 +396,7 @@ margin: 0 auto;
   text-align: center;
   /* border: solid pink; */
   padding-bottom: 100px;
+  color: white;
 }
 
 .logo {
