@@ -233,6 +233,10 @@ label {
     font-size: 20px;
     color: lightgreen;
   }
+
+  /* .collapsible-label:active {
+    color: red;
+  } */
   
   .collapsible-checkbox {
     display: none;
