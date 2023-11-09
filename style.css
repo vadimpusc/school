@@ -81,19 +81,24 @@ body {
   
   /* Styles for specific pages */
   .container .content h1 {
-    font-size: 40px;
+    /* font-size: 40px;
     color: white;
-    font-weight: bold;
+    font-weight: bold; */
     /* text-transform: uppercase; */
   }
   
 .classes-name {
   font-size: 40px;
   color: white;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
-
 }
+
+/* @media screen and (max-width: 678px) {
+  .classes-name {
+    font-size: 35px;
+  }
+} */
 
   .container .content h2 {
     font-size: 26px;
@@ -113,6 +118,7 @@ body {
     color: white;
     font-size: 30px;
   }
+
 }
 
   table {
@@ -229,7 +235,6 @@ label {
     .container .content img {
       width: 100%;
     }
-   
   }
   
   .collapsible-label {
@@ -414,8 +419,8 @@ margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   border: dotted wheat;
+  text-align: center;
   max-width: 600px;
   margin: 0 auto;
 }
