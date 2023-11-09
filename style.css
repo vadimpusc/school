@@ -42,26 +42,32 @@ body {
   }
   
   nav a.active {
-    background-color: orange;
+    background-color: white;
     color: black;
   }
 
   nav a:hover {
-    background-color: orange;
-    /* color: black; */
+    background-color: wheat;
+    color: black;
   }
   
-  .container {
-    /* position: relative; */
-    /* width: 100%; */
+  /* .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 1000px; */
     color: white;
     padding-left: 30px;
     padding-right: 30px;
+  } */
+
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
   }
   
   .content {
@@ -75,26 +81,24 @@ body {
   
   /* Styles for specific pages */
   .container .content h1 {
-    font-size: 68px;
+    font-size: 40px;
     color: white;
-    margin-top: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
   
   .container .content h2 {
-    font-size: 36px;
+    font-size: 26px;
     color: white;
-    margin-bottom: 20px;
   }
 
   p {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
-h1 {
-  color: white;
-  font-size: 50px;
-}
+
 
 @media only screen and (max-width:600px) {
   h1 {
@@ -124,11 +128,12 @@ label {
   
   .container .content img {
     width: 100%;
-    margin-top: 10px;
+    max-width: 900px;
+    /* margin-top: 10px; */
   }
 
   .desc-img {
-    width: 500px;
+    /* width: 500px; */
   }
   
   .container .content .author {
@@ -214,8 +219,9 @@ label {
     }
   
     .container .content img {
-      width: 70%;
+      width: 100%;
     }
+   
   }
   
   .collapsible-label {
@@ -260,10 +266,19 @@ label {
 
   .image-about {
     border-radius: 10px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    max-width: 500px;
+    /* padding-bottom: 30px; */
+    /* padding-top: 30px; */
+    /* max-width: 900px; */
+    width: 100%;
+  }
 
+  .image-404 {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 
   .highlighted-text {
@@ -346,15 +361,61 @@ section {
 .book-button {
   /* height: 60px; */
   font-size: 20px;
-  background-color: orange;
-  color: white;
+  background-color: white;
+  color: black;
   border: 0px;
   border-radius: 5px;
   /* margin: 20px; */
   padding: 10px;
+  cursor: pointer;
 }
 
 .book-button:hover {
-  background-color: white;
+  background-color: wheat;
   color: black;
+}
+
+.class-container {
+  max-width: 900px;
+margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: solid pink; */
+  padding-bottom: 100px;
+}
+
+.logo {
+  font-size: 60px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 30px;
+  }
+}
+
+.shout-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: dotted wheat;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-sub-text {
+  text-decoration: underline;
+}
+
+.hero-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  /* width: 100%; */
+  text-align: center;
 }
