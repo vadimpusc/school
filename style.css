@@ -123,6 +123,7 @@ body {
     color: white;
     font-size: 20px;
     line-height: 30px;
+    /* padding-top: 10px; */
   }
 
 
@@ -184,44 +185,38 @@ label {
     padding-bottom: 30px;
   }
   
-  .container .content .cta-link:hover {
-    background-color: white;
-  }
-  
-  .container .content table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 50px;
-  }
-  
-  .container .content table th,
-  .container .content table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  .container .content table th {
-    background-color: black;
-  }
   
   .container .content form {
     max-width: 400px;
     margin: 0 auto;
   }
+
+  @media screen and (max-width:600px) {
+    .container .content form {
+      width: 100%;
+      margin: 0 auto;
+      height: 60vh;
+      overflow: hidden;
+    }
+  }
   
-  .container .content form label {
+  /* .container .content form label {
     display: block;
     margin-top: 10px;
-  }
+  } */
   
   .container .content form input[type="text"],
   .container .content form input[type="email"],
-  .container .content form textarea {
+  .container .content form{
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
   }
+
+
+
+ 
   
   .container .content form input[type="submit"] {
     padding: 10px 20px;
@@ -579,3 +574,4 @@ select, option {
 }
 
 /* Nav Ends  */
+
