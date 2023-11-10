@@ -506,3 +506,76 @@ select, option {
   font-size: 16px;
 }
 
+/* New Menu  */
+
+.menu-icon {
+    display: none; 
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /*  transparency and color */
+    z-index: 2;
+}
+
+.close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* menu icon on smaller screens */
+    }
+
+    .navbar {
+        display: none; /* regular navbar on smaller screens */
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        background-color: black;
+        z-index: 1;
+        /* padding-top: 50px; */
+        height: 100vh;
+    }
+
+    .navbar a {
+        padding: 15px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .navbar a:hover {
+        background-color: wheat;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-desktop {
+    display: none;
+  }
+}
+
+/* Nav Ends  */

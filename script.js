@@ -7,3 +7,12 @@ function myFunction() {
     }
   }
   
+  // Menu 
+
+  function toggleMenu() {
+    var navbar = document.querySelector('.navbar');
+    var overlay = document.getElementById('overlay');
+    overlay.classList.toggle('active');
+    navbar.style.display = (navbar.style.display === 'none' || navbar.style.display === '') ? 'flex' : 'none';
+}
+

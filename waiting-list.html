@@ -7,7 +7,27 @@
   </head>
   <body>
     <header>
-      <nav>
+      <!-- Hamburger -->
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <!-- Overlay for the menu -->
+      <div class="overlay" onclick="toggleMenu()" id="overlay">
+        <div class="close-icon" onclick="toggleMenu()">×</div>
+        <!-- Navigation / smaller screens -->
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="classes.html">Classes</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Nnavigation / desktop -->
+      <nav class="navbar-desktop">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="classes.html">Classes</a>
