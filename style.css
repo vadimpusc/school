@@ -17,6 +17,7 @@ body {
     margin-right: 10px;
     font-family: Arial, sans-serif;
     background-color: black;
+    overflow-x: hidden;
   }
   
   header {
@@ -82,7 +83,6 @@ body {
     text-align: center;
     width: 100%;
 
-
   }
 
   ul > * {
@@ -94,12 +94,7 @@ body {
   }
   
   /* Styles for specific pages */
-  .container .content h1 {
-    /* font-size: 40px;
-    color: white;
-    font-weight: bold; */
-    /* text-transform: uppercase; */
-  }
+ 
   
 .classes-name {
   font-size: 40px;
@@ -194,10 +189,8 @@ label {
   @media screen and (max-width:600px) {
     .container .content form {
       width: 100%;
-      margin: 0 auto;
       height: 60vh;
-      overflow: hidden;
-    }
+}
   }
   
   /* .container .content form label {
@@ -207,16 +200,15 @@ label {
   
   .container .content form input[type="text"],
   .container .content form input[type="email"],
-  .container .content form{
+  .container .content form select{
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-
-
- 
   
   .container .content form input[type="submit"] {
     padding: 10px 20px;
