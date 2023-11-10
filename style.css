@@ -2,6 +2,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 * {
@@ -442,6 +444,10 @@ margin: 0 auto;
   padding: 10px;
 }
 
+.shout-out p {
+  margin: 0;
+}
+
 .hero-sub-text {
   text-decoration: underline;
 }
@@ -454,6 +460,12 @@ margin: 0 auto;
   height: 80vh;
   /* width: 100%; */
   text-align: center;
+}
+
+@media screen and (max-width: 678px) {
+  .hero-hero {
+    height: 100vh;
+  }
 }
 
 .fa-chevron-down {
@@ -484,3 +496,13 @@ margin: 0 auto;
     gap: 20px;
   }
 }
+
+input,
+input::placeholder {
+  font-size: 16px;
+}
+
+select, option {
+  font-size: 16px;
+}
+
