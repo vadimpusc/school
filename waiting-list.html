@@ -16,7 +16,6 @@
           <i class="fa fa-bars"></i>
         </a>
       </nav>
-
       <script>
         function submitForm() {
           var xhr = new XMLHttpRequest();
@@ -47,12 +46,38 @@
         <p class="sub-text-small">
           As soon as we have places available, we will send you an email.
         </p>
+        <!-- <form
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbxPmEddZJjUa_lvcLvdfDS34qVYmhHGUi830_GYCSKktnDZNWLQTIdCqgRG59ZVr0nTPQ/exec"
+        >
+          <input name="Email" type="email" placeholder="Email" required />
+          <input name="Name" type="text" placeholder="Your Name" required />
+          <div class="devider-30"></div>
+
+          <button class="book-button" type="button" onclick="submitForm()">
+            Submit
+          </button>
+        </form> -->
+
         <form
           method="POST"
           action="https://script.google.com/macros/s/AKfycbxPmEddZJjUa_lvcLvdfDS34qVYmhHGUi830_GYCSKktnDZNWLQTIdCqgRG59ZVr0nTPQ/exec"
         >
           <input name="Email" type="email" placeholder="Email" required />
           <input name="Name" type="text" placeholder="Your Name" required />
+          <label class="sub-text-small" for="courses"
+            >* What class are you interested in?</label
+          required>
+          <div class="devider-30"></div>
+
+          <select id="class" name="Class" required>
+            <option value="All">All</option>
+            <option value="Screenwriting For Indie Film">Screenwriting For Indie Film</option>
+            <option value="Learn How To Make Real-Time Feature Films">
+              Learn How To Make Real-Time Feature Films
+            </option>
+            <option value="Online">I'm interested in online classes</option>
+          </select>
           <div class="devider-30"></div>
 
           <button class="book-button" type="button" onclick="submitForm()">
