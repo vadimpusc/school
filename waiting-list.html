@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Indie Film Classes - Waiting List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="classes.html">Classes</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+
+      <script>
+        function submitForm() {
+          var xhr = new XMLHttpRequest();
+          var url =
+            "https://script.google.com/macros/s/AKfycbxPmEddZJjUa_lvcLvdfDS34qVYmhHGUi830_GYCSKktnDZNWLQTIdCqgRG59ZVr0nTPQ/exec";
+          var formData = new FormData(document.querySelector("form"));
+
+          xhr.open("POST", url, true);
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+              var result = JSON.parse(xhr.responseText);
+              if (result.result === "success") {
+                window.location.href = result.redirect;
+              } else {
+                // Handle error if needed
+                console.error(result.error);
+              }
+            }
+          };
+          xhr.send(formData);
+        }
+      </script>
+    </header>
+
+    <div class="container" style="padding-top: 20vh">
+      <div class="content">
+        <h2>Join Our Waiting List</h2>
+        <p class="sub-text-small">
+          As soon as we have places available, we will send you an email.
+        </p>
+        <form
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbxPmEddZJjUa_lvcLvdfDS34qVYmhHGUi830_GYCSKktnDZNWLQTIdCqgRG59ZVr0nTPQ/exec"
+        >
+          <input name="Email" type="email" placeholder="Email" required />
+          <input name="Name" type="text" placeholder="Your Name" required />
+          <div class="devider-30"></div>
+
+          <button class="book-button" type="button" onclick="submitForm()">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
