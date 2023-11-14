@@ -60,7 +60,11 @@
     <div class="container" style="padding-top: 20vh">
       <div class="content">
         <h2>Join Our Waiting List</h2>
-        <p class="sub-text-small">We are experiencing high demand. Our next class is scheduled to commence in early 2024. We encourage you to join the waiting list to secure your spot early.</p>
+        <p class="sub-text-small">
+          We are experiencing high demand. Our next class is scheduled to
+          commence in early 2024. We encourage you to join the waiting list to
+          secure your spot early.
+        </p>
         <p class="sub-text-small">
           As soon as we have places available, we will send you an email.
         </p>
@@ -71,21 +75,38 @@
         >
           <input name="Email" type="email" placeholder="Email" required />
           <input name="Name" type="text" placeholder="Your Name" required />
-          <label class="sub-text-small" for="courses"
+          <!-- <label class="sub-text-small" for="courses"
             >* What class are you interested in?</label
-          required>
-          <div class="devider-30"></div>
+          required> -->
+          <!-- <div class="devider-30"></div> -->
 
           <select id="class" name="Class" required>
-            <option value="All">Choose One</option>
-            <option value="Screenwriting For Indie Film (London)">Screenwriting For Indie Film (London)</option>
-            <option value="Make Real-Time Feature Films (London)">Make Real-Time Feature Films (London)
+            <option selected disabled>
+              * What class are you interested in?
             </option>
-            <option value="Screenwriting For Indie Film (Kyoto)">Screenwriting For Indie Film (Kyoto)</option>
-            <option value="Make Real-Time Feature Films (Kyoto)">Make Real-Time Feature Films (Kyoto)
+            <option disabled>London Classes</option>
+            <option value="Screenwriting For Indie Film (London)">
+              Screenwriting For Indie Film (London)
             </option>
-            <option value="Online Classes">I'm Interested In Online Classes</option>
+            <option value="Make Real-Time Feature Films (London)">
+              Make Real-Time Feature Films (London)
+            </option>
+            <option disabled>Kyoto Classes</option>
+            <option value="Screenwriting For Indie Film (Kyoto)">
+              Screenwriting For Indie Film (Kyoto)
+            </option>
+            <option value="Make Real-Time Feature Films (Kyoto)">
+              Make Real-Time Feature Films (Kyoto)
+            </option>
+            <option disabled>Online Classes</option>
+            <option value="Screenwriting For Indie Film (Online)">
+              Screenwriting For Indie Film (Online)
+            </option>
+            <option value="Make Real-Time Feature Films (Online)">
+              Make Real-Time Feature Films (Online)
+            </option>
           </select>
+
           <div class="devider-30"></div>
 
           <button class="book-button" type="button" onclick="submitForm()">
@@ -96,7 +117,6 @@
     </div>
 
     <div class="devider-30"></div>
-
 
     <script src="script.js"></script>
   </body>
