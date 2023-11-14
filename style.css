@@ -406,15 +406,17 @@ section {
 }
 
 .book-button {
-  /* height: 60px; */
   font-size: 20px;
   background-color: white;
   color: black;
   border: 0px;
   border-radius: 5px;
-  /* margin: 20px; */
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
   padding: 10px;
   cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .book-button:hover {
