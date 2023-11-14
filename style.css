@@ -9,7 +9,8 @@ html {
 * {
   font-family: monospace;
   font-weight: 100;
-  user-select: none;
+  user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari-specific */
 }
 
 body {
