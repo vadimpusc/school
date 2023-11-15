@@ -464,6 +464,16 @@ margin: 0 auto;
 
 .shout-out p {
   margin: 0;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .shout-out p {
+    font-size: 14px;
+  }
+  .hero-sub-text {
+    font-size: 14px;
+  }
 }
 
 .hero-sub-text {
@@ -773,9 +783,16 @@ line-height: normal;
 }
 
 .bold-heading {
-  font-size: 50px !important;
+  font-size: 40px !important;
+  font-weight: bold;
   line-height: normal;
   text-transform: uppercase;
   margin: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .bold-heading {
+    font-size: 30px !important;
+  }
 }
 
