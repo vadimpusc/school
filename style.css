@@ -465,11 +465,14 @@ margin: 0 auto;
 .shout-out p {
   margin: 0;
   text-transform: capitalize;
+  ;
 }
 
 @media screen and (max-width: 768px) {
   .shout-out p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: normal;
+    padding: 10px;
   }
   .hero-sub-text {
     font-size: 14px;
@@ -702,6 +705,7 @@ line-height: normal;
   padding: 10px;
   max-width: 600px;
   margin: 0 auto;
+  line-height: normal;
 }
 
 .class-poster {
@@ -735,6 +739,7 @@ line-height: normal;
   .class-requirements {
     margin-left: 20px;
     margin-right: 20px;
+    line-height: normal;
   }
 }
 
@@ -762,6 +767,11 @@ line-height: normal;
     min-width: 100% !important;
     line-height: 0px;
     text-align: center;
+    line-height: normal;
+  }
+  .classes-additional-information p {
+    line-height: normal !important;
+    margin: 5px !important;
   }
 
 }
@@ -769,11 +779,13 @@ line-height: normal;
 .classes-additional-information p {
   font-size: 16px;
   color: black;
+  line-height: normal;
 }
 
 .classes-additional-information-item {
   /* max-width: 250px; */
-  width: 20vw;
+  width: 18vw;
+  line-height: normal;
 }
 
 .class-location {
