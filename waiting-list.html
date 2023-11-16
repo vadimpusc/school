@@ -33,12 +33,42 @@
         <a href="/classes">Classes</a>
         <a href="/contact">Contact</a>
       </nav>
-      <script>
+      <!-- <script>
         function submitForm() {
           var xhr = new XMLHttpRequest();
           var url =
             "https://script.google.com/macros/s/AKfycbxPmEddZJjUa_lvcLvdfDS34qVYmhHGUi830_GYCSKktnDZNWLQTIdCqgRG59ZVr0nTPQ/exec";
           var formData = new FormData(document.querySelector("form"));
+
+          xhr.open("POST", url, true);
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+              var result = JSON.parse(xhr.responseText);
+              if (result.result === "success") {
+                window.location.href = result.redirect;
+              } else {
+                // Handle error if needed
+                console.error(result.error);
+              }
+            }
+          };
+          xhr.send(formData);
+        }
+      </script> -->
+      <script>
+        function submitForm() {
+          var form = document.querySelector("form");
+          var formData = new FormData(form);
+
+          // Perform basic form validation
+          if (!form.checkValidity()) {
+            alert("Please fill in all required fields.");
+            return;
+          }
+
+          var xhr = new XMLHttpRequest();
+          var url =
+            "https://script.google.com/macros/s/AKfycbxPmEddZJjUa_lvcLvdfDS34qVYmhHGUi830_GYCSKktnDZNWLQTIdCqgRG59ZVr0nTPQ/exec";
 
           xhr.open("POST", url, true);
           xhr.onreadystatechange = function () {
@@ -75,13 +105,9 @@
         >
           <input name="Email" type="email" placeholder="Email" required />
           <input name="Name" type="text" placeholder="Your Name" required />
-          <!-- <label class="sub-text-small" for="courses"
-            >* What class are you interested in?</label
-          required> -->
-          <!-- <div class="devider-30"></div> -->
 
           <select id="class" name="Class" required>
-            <option selected disabled>
+            <option value="" selected disabled>
               * What class are you interested in?
             </option>
             <option disabled>London Classes</option>
