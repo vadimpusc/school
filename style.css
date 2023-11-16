@@ -823,3 +823,10 @@ line-height: normal;
   }
 }
 
+#loading-icon {
+  display: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+}

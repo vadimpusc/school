@@ -35,10 +35,18 @@
       </nav>
       <!-- <script>
         function submitForm() {
+          var form = document.querySelector("form");
+          var formData = new FormData(form);
+
+          // Perform basic form validation
+          if (!form.checkValidity()) {
+            alert("Please fill in all required fields.");
+            return;
+          }
+
           var xhr = new XMLHttpRequest();
           var url =
             "https://script.google.com/macros/s/AKfycbxPmEddZJjUa_lvcLvdfDS34qVYmhHGUi830_GYCSKktnDZNWLQTIdCqgRG59ZVr0nTPQ/exec";
-          var formData = new FormData(document.querySelector("form"));
 
           xhr.open("POST", url, true);
           xhr.onreadystatechange = function () {
@@ -66,19 +74,28 @@
             return;
           }
 
+          // Show loading icon
+          var loadingIcon = document.getElementById("loading-icon");
+          loadingIcon.style.display = "block";
+
           var xhr = new XMLHttpRequest();
           var url =
             "https://script.google.com/macros/s/AKfycbxPmEddZJjUa_lvcLvdfDS34qVYmhHGUi830_GYCSKktnDZNWLQTIdCqgRG59ZVr0nTPQ/exec";
 
           xhr.open("POST", url, true);
           xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-              var result = JSON.parse(xhr.responseText);
-              if (result.result === "success") {
-                window.location.href = result.redirect;
-              } else {
-                // Handle error if needed
-                console.error(result.error);
+            if (xhr.readyState == 4) {
+              // Hide loading icon regardless of success or failure
+              loadingIcon.style.display = "none";
+
+              if (xhr.status == 200) {
+                var result = JSON.parse(xhr.responseText);
+                if (result.result === "success") {
+                  window.location.href = result.redirect;
+                } else {
+                  // Handle error if needed
+                  console.error(result.error);
+                }
               }
             }
           };
@@ -143,6 +160,7 @@
           </select>
 
           <div class="devider-30"></div>
+          <div id="loading-icon">Thank you...</div>
 
           <button class="book-button" type="button" onclick="submitForm()">
             Submit
