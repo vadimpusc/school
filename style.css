@@ -436,9 +436,6 @@ margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* border: solid pink; */
-  /* padding-bottom: 100px; */
-  padding-top: 100px;
   color: white;
 }
 
@@ -450,6 +447,11 @@ margin: 0 auto;
 @media screen and (max-width: 768px) {
   .logo {
     font-size: 30px;
+  }
+  .class-container {
+    /* display: none; */
+    /* width: 100%; */
+    margin: 0px;
   }
 }
 
@@ -840,7 +842,6 @@ line-height: normal;
 .class-poster-outer {
   margin: 0 auto !important;
   border: 3px solid white;
-  margin-bottom: 20px !important;
 }
 
 /* Checkout  */
@@ -856,16 +857,20 @@ line-height: normal;
 .classes-row-layout {
   display: flex;
   flex-direction: row;
-  gap: 20px
+  gap: 20px;
   /* display: none; */
 }
 
 @media screen and (max-width: 768px) {
   .classes-row-layout {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .class-poster-outer {
     max-width: 300px !important;
+    /* width: 80svw; */
   }
 }
