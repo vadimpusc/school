@@ -33,36 +33,6 @@
         <a href="/classes">Classes</a>
         <a href="/contact">Contact</a>
       </nav>
-      <!-- <script>
-        function submitForm() {
-          var form = document.querySelector("form");
-          var formData = new FormData(form);
-
-          // Perform basic form validation
-          if (!form.checkValidity()) {
-            alert("Please fill in all required fields.");
-            return;
-          }
-
-          var xhr = new XMLHttpRequest();
-          var url =
-            "https://script.google.com/macros/s/AKfycbxPmEddZJjUa_lvcLvdfDS34qVYmhHGUi830_GYCSKktnDZNWLQTIdCqgRG59ZVr0nTPQ/exec";
-
-          xhr.open("POST", url, true);
-          xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-              var result = JSON.parse(xhr.responseText);
-              if (result.result === "success") {
-                window.location.href = result.redirect;
-              } else {
-                // Handle error if needed
-                console.error(result.error);
-              }
-            }
-          };
-          xhr.send(formData);
-        }
-      </script> -->
       <script>
         function submitForm() {
           var form = document.querySelector("form");
@@ -104,7 +74,7 @@
       </script>
     </header>
 
-    <div class="container" style="padding-top: 20vh">
+    <div class="container" style="padding-top: 10vh">
       <div class="content">
         <h2>Join Our Waiting List</h2>
         <p class="sub-text-small">

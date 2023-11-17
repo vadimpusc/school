@@ -9,8 +9,8 @@ html {
 * {
   font-family: monospace;
   font-weight: 100;
-  user-select: none;
-    -webkit-user-select: none;
+  /* user-select: none; */
+    /* -webkit-user-select: none; */
     box-sizing: border-box;
 }
 
@@ -404,6 +404,7 @@ section {
 
 .sub-text-small {
   font-size: 16px;
+  color: white;
 }
 
 .sub-text-smaller {
@@ -636,7 +637,7 @@ select, option {
 }
 
 .classes-location p {
-  line-height: 0;
+  line-height: normal;
   font-size: 12px;
 }
 .classes-location  {
@@ -648,7 +649,7 @@ select, option {
   /* padding-top: 30px; */
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:768px) {
   .classes-location {
     display: flex;
     flex-direction: column;
@@ -713,7 +714,7 @@ line-height: normal;
 }
 
 .class-poster {
-  max-width: 400px;
+  max-width: 350px;
   object-fit: contain;
 }
 
@@ -836,11 +837,35 @@ line-height: normal;
 
 /* Poster  */
 
-.clas-poster {
-  /* display: none; */
-  /* display: flex; */
-  max-width: 360px !important;
+.class-poster-outer {
   margin: 0 auto !important;
   border: 3px solid white;
   margin-bottom: 20px !important;
+}
+
+/* Checkout  */
+
+#cardElement {
+  background-color: white;
+  /* border: 2px solid white; */
+  font-size: 16px;
+  padding: 10px; /* Optional: Add padding for better visibility */
+  margin: 10px;
+}
+
+.classes-row-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 20px
+  /* display: none; */
+}
+
+@media screen and (max-width: 768px) {
+  .classes-row-layout {
+    flex-direction: column;
+  }
+
+  .class-poster-outer {
+    max-width: 300px !important;
+  }
 }
