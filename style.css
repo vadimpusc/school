@@ -431,12 +431,8 @@ section {
 }
 
 .class-container {
-  max-width: 900px;
+  max-width: 350px;
 margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
 }
 
 .logo {
@@ -840,7 +836,6 @@ line-height: normal;
 /* Poster  */
 
 .class-poster-outer {
-  margin: 0 auto !important;
   border: 3px solid white;
 }
 
@@ -857,8 +852,6 @@ line-height: normal;
 .classes-row-layout {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  /* display: none; */
 }
 
 @media screen and (max-width: 768px) {
@@ -867,6 +860,7 @@ line-height: normal;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
   }
 
   .class-poster-outer {
